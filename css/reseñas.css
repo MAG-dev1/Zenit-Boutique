@@ -1,0 +1,148 @@
+ /* Estilos del navbar */
+
+ html, body{
+    background: radial-gradient(circle, rgba(224,180,199,1) 60%, rgba(201,163,228,1) 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background: radial-gradient(circle, rgba(204,99,144,1) 50%, rgba(221,163,235,1) 97%);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    display: inline;
+    
+}
+
+link {
+    color: #7f2fd0;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+link:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+    
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(232,162,192,1) 50%, rgba(232,177,245,1) 97%);
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 0.5%;
+    padding: 20px;
+    margin-bottom: 5%;
+    border: 10px solid #ddd;
+  }
+  
+  .main section {
+    height: 90%;
+   
+  }
+  
+  .card_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-column-gap: 20px;
+   
+  }
+  
+  .card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+  }
+  
+  .card h3 {
+    padding-left: 10px;
+  }
+  
+  .card p {
+    text-transform: capitalize;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 15px;
+    min-height: fit-content;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis; 
+    max-height: 100px; 
+  }
+  
+  .card img {
+    width: 50%;
+    height: 50%;
+    border-radius: 5%;
+  }
+
+  footer{
+
+    
+    position: relative;
+    background: radial-gradient(circle, rgba(201,163,228,1) 62%, rgba(247,194,217,1) 100%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+  
+  @media (max-width: 1800px) {
+    .main {
+      height: 100%;
+      margin-bottom: 25%;
+    }
+    .card_container {
+      display: block;
+      width: 100%;
+      grid-template-columns: repeat(1, 1fr);
+      
+    }
+  
+    .card img {
+      width: 50%;
+      height: 30%;
+      object-fit: cover;
+    }
+  }
+  
+  
+@media (max-width: 1024px) {
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+}
+
+  
+  

@@ -1,0 +1,161 @@
+ /* Estilos del navbar */
+
+ html, body{
+    background: radial-gradient(circle, rgba(224,180,199,1) 60%, rgba(201,163,228,1) 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background: radial-gradient(circle, rgba(204,99,144,1) 50%, rgba(221,163,235,1) 97%);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    display: inline;
+    
+}
+
+link {
+    color: #7f2fd0;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+link:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+    
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    height: 1200px;
+    
+   
+}
+
+main img{
+    margin-right: 50px;
+    width:50%;
+    height: 1200px;
+    border-radius: 10px;
+    border: 10px solid #ddd;
+}
+main section {
+    background-color: linear-gradient(90deg, rgba(232,162,192,1) 50%, rgba(232,177,245,1) 97%);
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    height: 100%;
+    width: 100%;
+    border: 10px solid #ddd;
+}
+
+main h2 {
+    text-align: center;
+    color: #333;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main label {
+    color: #555;
+    font-weight: bold;
+}
+
+main input, .main  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+main input:focus, .main textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+main button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main button:hover {
+    background-color: #0056b3;
+}
+
+
+footer{
+
+    
+    position: relative;
+    background: radial-gradient(circle, rgba(201,163,228,1) 62%, rgba(247,194,217,1) 100%);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media(max-width:1200px){
+    main img{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media(max-width:600px){
+    
+    main{
+        width: 100%;
+        margin: 0;
+       
+    }
+    main section{
+        border: none;
+    }
+}
+
+
