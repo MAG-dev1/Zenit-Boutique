@@ -20,10 +20,18 @@ nav ul {
     justify-content: space-around;
 }
 
+
 nav li {
     display: inline;
+    padding: 10px;
     
 }
+
+nav li:hover{
+    background-color: #0056b3;
+    border-radius: 5px;
+    
+} 
 
 link {
     color: #7f2fd0;
@@ -100,10 +108,18 @@ main{
 }
 
 .card button{
-    margin-bottom: 5%;
+    
     background-color: #92bbe7;
     border-radius: 5px;
     border-color: none;
+    padding: 10px;
+}
+
+.card button:hover{
+
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
 }
 
 footer{
@@ -115,6 +131,7 @@ footer{
     padding: 20px;
     text-align: center;
 }
+
 
 
 @media (max-width: 1800px) {

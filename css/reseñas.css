@@ -21,9 +21,16 @@ nav ul {
 }
 
 nav li {
-    display: inline;
-    
+  display: inline;
+  padding: 10px;
+  
 }
+
+nav li:hover{
+  background-color: #0056b3;
+  border-radius: 5px;
+  
+} 
 
 link {
     color: #7f2fd0;

@@ -20,7 +20,18 @@ nav ul {
 
 nav li {
     display: inline;
+    padding: 10px;
     
+}
+
+nav li:hover{
+    background-color: #0056b3;
+    border-radius: 5px;
+    
+} 
+
+a {
+    text-decoration: none;
 }
 
 
@@ -166,8 +177,10 @@ nav li {
     font-size: 1rem;
 }
 
+
+
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
     nav ul {
         flex-direction: column;
         text-align: center;
@@ -179,7 +192,7 @@ nav li {
 
     .cart-item {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .cart-item img {
@@ -189,4 +202,12 @@ nav li {
     .cart-item-details {
         margin-left: 0;
     }
+
+    .cart-item-actions{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+   
 }

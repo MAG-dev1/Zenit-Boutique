@@ -15,7 +15,7 @@ fetch('https://raw.githubusercontent.com/MAG-dev1/Zenit-Boutique/main/javascript
                 <h3>${producto.title}</h3>
                 <img src="${producto.img_src}" alt="${producto.title}">
                 <p>${producto.p}</p>
-                <button>Agregar</button>
+                <button class="buttonadd">Agregar</button>
             `;
 
             // Agregar evento de clic al botón
@@ -44,6 +44,8 @@ const addProduct = (p) => {
        
         console.log('Producto agregado al carrito:', p);
     }
+    // Guardar el carrito en localStorage
+    
     localStorage.setItem('products', JSON.stringify(productsInCart));
     
     

@@ -22,8 +22,15 @@ nav ul {
 
 nav li {
     display: inline;
+    padding: 10px;
     
 }
+
+nav li:hover{
+    background-color: #0056b3;
+    border-radius: 5px;
+    
+} 
 
 link {
     color: #7f2fd0;
@@ -47,7 +54,7 @@ main {
     display: flex;
     justify-content: center;
     margin: 100px;
-    height: 1200px;
+    height: 900px;
     
    
 }
@@ -55,7 +62,6 @@ main {
 main img{
     margin-right: 50px;
     width:50%;
-    height: 1200px;
     border-radius: 10px;
     border: 10px solid #ddd;
 }
@@ -92,6 +98,7 @@ main input, .main  textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+  
 }
 
 main input:focus, .main textarea:focus {
@@ -108,6 +115,7 @@ main button {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 5%;
 }
 
 main button:hover {
