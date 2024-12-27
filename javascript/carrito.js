@@ -20,20 +20,26 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
                 <div class="cart-item-actions">
                     <button onclick="removeFromCart(${index})">Eliminar</button>
-                    <button id="addbutton">Agregar</button>
-                    <div id="total">Cantidad:1</div>
+                    <button id="addbutton-${index}" class="addbutton">Agregar</button>
+                    <div id="total-${index}" class="total">Cantidad:${item.count}</div>
                 </div>
                 
                 
             `;
+
             carritoLista.appendChild(productoDiv);
+            document.getElementById(`addbutton-${index}`).addEventListener("click", () => {
+                let productosCarrito = JSON.parse(localStorage.getItem('products')) || [];
+                let product = productosCarrito.find(product => product.title === item.title);
+                product.count = (product.count || 1) + 1;
+                productosCarrito.splice(index, 1, product);
+                localStorage.setItem('products', JSON.stringify(productosCarrito));
+                document.getElementById(`total-${index}`).innerHTML = "Cantidad: " + product.count;
+            });
         });
     }
     
-    document.getElementById("addbutton").addEventListener("click", () => {
-        const productosCarrito = JSON.parse(localStorage.getItem('products')) || [];
-        document.getElementById("total").innerHTML = "Cantidad: " + productosCarrito.length;
-    });
+  
 
     // Función para vaciar el carrito
     document.getElementById("vaciar-carrito").addEventListener("click", () => {
