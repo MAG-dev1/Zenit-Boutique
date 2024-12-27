@@ -1,0 +1,172 @@
+html, body{
+    background: radial-gradient(circle, rgba(224,180,199,1) 60%, rgba(201,163,228,1) 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background: radial-gradient(circle, rgba(204,99,144,1) 50%, rgba(221,163,235,1) 97%);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    display: inline;
+    
+}
+
+
+#title_carrito{
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#carrito-lista {
+    max-width: 1400px;
+    margin: 2rem auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    max-width: 100px;
+    border-radius: 8px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-item-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    
+}
+
+.cart-item-details p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.cart-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cart-item-actions button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.cart-item-actions button:hover {
+    background-color: #c82333;
+}
+
+#addbutton{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+#addbutton:hover{
+    background-color: rgb(28, 160, 28);
+}
+
+#total{
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+ 
+}
+
+/* Botón para vaciar el carrito */
+#vaciar-carrito {
+    display: block;
+    margin: 1rem auto;
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+#vaciar-carrito:hover {
+    background-color: #e0a800;
+}
+
+/* Mensajes */
+#carrito-lista p {
+    text-align: center;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item img {
+        margin-bottom: 0.5rem;
+    }
+
+    .cart-item-details {
+        margin-left: 0;
+    }
+}

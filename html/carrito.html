@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/carrito.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
+    <header>   
+        <nav>
+            <ul>
+                <li><a href="/html/index.html">Productos</a></li>
+                <li><a href="/html/reseñas.html">Reseñas</a></li>
+                <li><a href="/html/contacto.html">Contacto</a></li>
+                <li><a href="/html/carrito.html">Mi carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="carrito-container">
+        <h2 id="title_carrito">Productos en el Carrito</h2>
+        <div id="carrito-lista">
+            <!-- Aquí se mostrarán los productos del carrito -->
+        </div>
+        <button id="vaciar-carrito">Vaciar Carrito</button>
+    </div>
+    <script src="../javascript/carrito.js"></script>
 </body>
 </html>
